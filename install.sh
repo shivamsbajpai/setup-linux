@@ -57,3 +57,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 38
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+####following command lists all power related settings
+####gsettings list-recursively org.gnome.settings-daemon.plugins.power
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'nothing'

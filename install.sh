@@ -31,8 +31,22 @@ echo "=============================================="
 # echo "=============================================="
 # echo "setup complete"
 # echo "=============================================="
+echo "=============================================="
+echo "activating env.sh"
+echo "=============================================="
 source env.sh
+echo "=============================================="
 echo "configuring git"
 echo "=============================================="
-git config user.email "$GIT_EMAIL"
-git config user.name "$GIT_NAME"
+# git config user.email "$GIT_EMAIL"
+# git config user.name "$GIT_NAME"
+echo "=============================================="
+echo "downloading dropbox"
+echo "=============================================="
+# wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
+echo "=============================================="
+echo "installing dropbox"
+echo "=============================================="
+# sudo dpkg -i dropbox.deb
+# uninstall dropbox
+# sudo apt-get remove dropbox

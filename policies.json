@@ -1,0 +1,75 @@
+{
+  "policies": {
+    "Extensions": {
+      "Install": [
+        "https://addons.mozilla.org/firefox/downloads/file/4171020/ublock_origin-1.52.2.xpi",
+        "https://addons.mozilla.org/firefox/downloads/file/4180072/bitwarden_password_manager-2023.9.2.xpi",
+        "https://addons.mozilla.org/firefox/downloads/file/4186050/multi_account_containers-8.1.3.xpi"
+      ]
+    },
+    "ExtensionUpdate": true,
+    "DisableTelemetry": true,
+    "DisableFirefoxStudies": true,
+    "DisablePocket": true,
+    "DisplayBookmarksToolbar": "newtab",
+    "NewTabPage": true,
+    "NoDefaultBookmarks": true,
+    "OfferToSaveLogins": false,
+    "PasswordManagerEnabled": false,
+    "SearchSuggestEnabled": false,
+    "SSLVersionMin": "tls1.2",
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": false,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true,
+      "Exceptions": []
+    },
+    "Containers": {
+      "Default": [
+        {
+          "name": "testing",
+          "icon": "cart",
+          "color": "blue"
+        }
+      ]
+    },
+    "ExtensionSettings": {
+      "uBlock0@raymondhill.net": {
+     	"default_area": "tabstrip"
+      }
+    },
+    "FirefoxHome": {
+      "Search": false,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false,
+      "Locked": false
+    },
+    "Homepage": {
+      "Locked": false,
+      "StartPage": "previous-session"
+    },
+    "DNSOverHTTPS": {
+      "Enabled":  true,
+      "ProviderURL": "https://mozilla.cloudflare-dns.com/dns-query",
+      "Locked": false
+    },
+    "Cookies": {
+      "Allow": [],
+      "AllowSession": [],
+      "Block": [],
+      "Default": false,
+      "AcceptThirdParty": "never",
+      "RejectTracker": true,
+      "Locked": false,
+      "Behavior": "reject-tracker-and-partition-foreign",
+      "BehaviorPrivateBrowsing": "reject-tracker-and-partition-foreign"
+    }
+  }
+}
+

@@ -50,3 +50,10 @@ echo "=============================================="
 sudo dpkg -i dropbox.deb
 ###uninstall dropbox
 ####sudo apt-get remove dropbox
+echo "=============================================="
+echo "customizing ui"
+echo "=============================================="
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 38
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide true

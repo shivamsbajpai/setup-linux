@@ -3,6 +3,7 @@ echo "=============================================="
 echo "updating package manager index..."
 echo "=============================================="
 sudo apt update
+sudo apt upgrade
 ###firefox
 echo "=============================================="
 echo "updating firefox policies..."
@@ -22,7 +23,7 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 ###vs code settings
-cp vs_code_settings.json $HOME/.config/Code/User/settings.json
+sudo cp vs_code_settings.json $HOME/.config/Code/User/settings.json
 ###install git
 echo "=============================================="
 echo "installing git..."
@@ -38,8 +39,8 @@ source env.sh
 echo "=============================================="
 echo "configuring git"
 echo "=============================================="
-git config user.email "$GIT_EMAIL"
-git config user.name "$GIT_NAME"
+git config --global user.email "$GIT_EMAIL"
+git config --global user.name "$GIT_NAME"
 echo "=============================================="
 echo "downloading dropbox"
 echo "=============================================="
@@ -58,6 +59,11 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 38
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
 gsettings set org.gnome.desktop.interface show-battery-percentage true
-####following command lists all power related settings
+###following command lists all power related settings
 ####gsettings list-recursively org.gnome.settings-daemon.plugins.power
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'nothing'
+###following command centers the dock
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+###following command appends the application icon to the dock favorites
+####gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'application_name.desktop']"
+gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop','code.desktop', 'org.gnome.Terminal.desktop']"

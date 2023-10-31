@@ -51,6 +51,11 @@
           "name": "hyper-fin",
           "icon": "briefcase",
           "color": "turquoise"
+        },
+        {
+            "name": "college",
+            "icon": "circle",
+            "color": "green"
         }
       ]
     },

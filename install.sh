@@ -66,4 +66,6 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'nothi
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 ###following command appends the application icon to the dock favorites
 ####gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'application_name.desktop']"
-gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop','code.desktop', 'org.gnome.Terminal.desktop']"
+###following command lists the favorite apps
+gsettings get org.gnome.shell favorite-apps
+gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop','code.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop']"

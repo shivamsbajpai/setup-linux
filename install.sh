@@ -51,6 +51,11 @@ echo "=============================================="
 sudo dpkg -i dropbox.deb
 ###uninstall dropbox
 ####sudo apt-get remove dropbox
+###install authy
+echo "=============================================="
+echo "installing authy"
+echo "=============================================="
+sudo snap install authy
 echo "=============================================="
 echo "customizing ui"
 echo "=============================================="

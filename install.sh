@@ -74,3 +74,13 @@ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 ###following command lists the favorite apps
 gsettings get org.gnome.shell favorite-apps
 gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop','code.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop']"
+
+###install nvm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+###above command downloads an official nvm script and runs it
+###install lts node => run in a new terminal 
+nvm install --lts
+###install web-ext for firefox extension
+npm install --global web-ext
+###uninstallation command
+####npm uninstall --global web-ext

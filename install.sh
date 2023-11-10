@@ -24,6 +24,9 @@ sudo apt update
 sudo apt install code
 ###vs code settings
 sudo cp vs_code_settings.json $HOME/.config/Code/User/settings.json
+###install vs code extensions
+code --install-extension firefox-devtools.vscode-firefox-debug
+mkdir ~/.firefox-debug-profile
 ###install git
 echo "=============================================="
 echo "installing git..."

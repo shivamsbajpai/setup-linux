@@ -77,13 +77,32 @@ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 ###following command lists the favorite apps
 gsettings get org.gnome.shell favorite-apps
 gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop','code.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop']"
-
+echo "=============================================="
+echo "installing nvm"
+echo "=============================================="
 ###install nvm
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ###above command downloads an official nvm script and runs it
 ###install lts node => run in a new terminal 
+echo "=============================================="
+echo "installing lts version of node using nvm"
+echo "=============================================="
 nvm install --lts
-###install web-ext for firefox extension
+echo "=============================================="
+echo "installing web-ext for firefox extension development"
+echo "=============================================="
 npm install --global web-ext
 ###uninstallation command
 ####npm uninstall --global web-ext
+###install google chrome
+echo "=============================================="
+echo "installing google chrome"
+echo "=============================================="
+###to avoid adding google repository
+sudo touch /etc/default/google-chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+echo "=============================================="
+echo "removing google chrome downloaded file"
+echo "=============================================="
+sudo rm google-chrome-stable_current_amd64.deb

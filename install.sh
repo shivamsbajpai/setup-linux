@@ -1,9 +1,15 @@
 #!/bin/bash
 echo "=============================================="
-echo "updating package manager index..."
+echo "general update & upgrade"
 echo "=============================================="
+### following command will find out the latest version of each package and dependencies
 sudo apt update
+### following command will update the packages and dependencies
 sudo apt upgrade
+echo "=============================================="
+echo "installing vim"
+echo "=============================================="
+sudo apt-get install vim
 ###firefox
 echo "=============================================="
 echo "updating firefox policies..."

@@ -112,3 +112,7 @@ echo "=============================================="
 echo "removing google chrome downloaded file"
 echo "=============================================="
 sudo rm google-chrome-stable_current_amd64.deb
+echo "=============================================="
+echo "installing go"
+echo "=============================================="
+sudo snap install go --classic
